@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Algebra - MicroCourses</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div data-include="header.html"></div>
+
+    <!-- Course Content -->
+    <main class="course-container">
+        <h2>Linear Algebra</h2>
+
+        <!-- Using the dedicated class for detail page image -->
+        <img src="assets/linear-algebra.jpg" alt="Linear Algebra image" class="course-image-detail">
+
+        <!-- Course description underneath the image -->
+        <p>Explore the mathematical foundations of linear algebra, including vector spaces, matrices, transformations, and eigenvalues. This course covers essential concepts like matrix multiplication, determinants, vector spaces, orthogonality, eigenvalues, and eigenvectors. Gain practical skills to apply linear algebra techniques to data analysis, machine learning, and computational modeling.</p>
+
+        <!-- Module list -->
+        <section class="modules">
+            <h3>Modules</h3>
+            <ul>
+                <li>Module 1: Introduction to Vectors and Vector Spaces</li>
+                <li>Module 2: Matrix Operations and Transformations</li>
+                <li>Module 3: Linear Independence and Span</li>
+                <li>Module 4: Matrix Inversion and Determinants</li>
+                <li>Module 5: Orthogonality and Projections</li>
+                <li>Module 6: Eigenvalues and Eigenvectors</li>
+                <li>Module 7: Diagonalization and Matrix Decomposition</li>
+                <li>Module 8: Applications in Machine Learning</li>
+                <li>Module 9: Numerical Methods for Solving Systems</li>
+                <li>Module 10: Project: Applying Linear Algebra to Data Science</li>
+            </ul>
+            <p><strong>Time:</strong> 10 weeks</p>
+            <p><strong>Cost:</strong> $500 AUD</p>
+        </section>
+
+        <!-- Enroll button -->
+        <button class="btn">Enroll</button>
+    </main>
+
+    <!-- Enroll Form Container -->
+    <div id="enroll-form-container" class="enroll-form-container">
+        <form id="enroll-form" class="enroll-form">
+            <h3>Enroll Now</h3>
+            <input type="text" id="name" class="enroll-input" placeholder="Your Name" required>
+            <input type="email" id="email" class="enroll-input" placeholder="Your Email" required>
+
+            <!-- Preferred Date Range -->
+            <label for="date-range">Preferred Date Range:</label>
+            <select id="date-range" class="enroll-input" required>
+                <option value="1 February 2026 - 15 April 2026">1 February 2026 - 15 April 2026</option>
+                <option value="1 May 2026 - 15 July 2026">1 May 2026 - 15 July 2026</option>
+                <option value="1 August 2026 - 15 October 2026">1 August 2026 - 15 October 2026</option>
+                <option value="1 November 2026 - 15 January 2027">1 November 2026 - 15 January 2027</option>
+                <option value="1 February 2027 - 15 April 2027">1 February 2027 - 15 April 2027</option>
+                <option value="1 May 2027 - 15 July 2027">1 May 2027 - 15 July 2027</option>
+                <option value="1 August 2027 - 15 October 2027">1 August 2027 - 15 October 2027</option>
+                <option value="1 November 2027 - 15 January 2028">1 November 2027 - 15 January 2028</option>
+            </select>
+
+            <!-- Preferred Timeframe -->
+            <label for="timeframe">Preferred Time:</label>
+            <select id="timeframe" class="enroll-input" required>
+                <option value="10am">10am (Morning)</option>
+                <option value="2pm">2pm (Afternoon)</option>
+                <option value="6pm">6pm (Evening)</option>
+            </select>
+
+            <!-- Submit and Cancel buttons -->
+            <button type="submit" class="enroll-submit">Submit</button>
+            <button type="button" id="cancel-button" class="cancel-button">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+</body>
+</html>

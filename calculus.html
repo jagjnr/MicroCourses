@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculus - MicroCourses</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div data-include="header.html"></div>
+
+    <!-- Course Content -->
+    <main class="course-container">
+        <h2>Calculus</h2>
+
+        <!-- Course image, left-aligned under heading -->
+        <img src="assets/calculus.jpg" alt="Calculus image" class="course-image-detail">
+
+        <!-- Course description underneath the image -->
+        <p>Delve into the world of Calculus and master differentiation, integration, and their applications in analyzing and modeling dynamic systems. Gain a deep understanding of limits, continuity, and advanced calculus concepts to build a strong mathematical foundation for data science and engineering.</p>
+
+        <!-- Module list -->
+        <section class="modules">
+            <h3>Modules</h3>
+            <ul>
+                <li>Module 1: Introduction to Calculus and Limits</li>
+                <li>Module 2: Differentiation Techniques and Applications</li>
+                <li>Module 3: Integration Techniques and Applications</li>
+                <li>Module 4: Multivariable Calculus Concepts</li>
+                <li>Module 5: Partial Derivatives and Optimization</li>
+                <li>Module 6: Differential Equations and Solutions</li>
+                <li>Module 7: Series and Sequences</li>
+                <li>Module 8: Vector Calculus and Gradient</li>
+                <li>Module 9: Numerical Methods for Calculus</li>
+                <li>Module 10: Real-World Applications of Calculus</li>
+            </ul>
+            <p><strong>Time:</strong> 10 weeks (40 hours)</p>
+            <p><strong>Cost:</strong> $500 AUD</p>
+        </section>
+
+        <!-- Enroll button -->
+        <button class="btn">Enroll</button>
+    </main>
+
+    <!-- Enroll Form Container -->
+    <div id="enroll-form-container" class="enroll-form-container">
+        <form id="enroll-form" class="enroll-form">
+            <h3>Enroll Now</h3>
+            <input type="text" id="name" class="enroll-input" placeholder="Your Name" required>
+            <input type="email" id="email" class="enroll-input" placeholder="Your Email" required>
+
+            <!-- Preferred Date Range -->
+            <label for="date-range">Preferred Date Range:</label>
+            <select id="date-range" class="enroll-input" required>
+                <option value="1 February 2026 - 15 April 2026">1 February 2026 - 15 April 2026</option>
+                <option value="1 May 2026 - 15 July 2026">1 May 2026 - 15 July 2026</option>
+                <option value="1 August 2026 - 15 October 2026">1 August 2026 - 15 October 2026</option>
+                <option value="1 November 2026 - 15 January 2027">1 November 2026 - 15 January 2027</option>
+                <option value="1 February 2027 - 15 April 2027">1 February 2027 - 15 April 2027</option>
+                <option value="1 May 2027 - 15 July 2027">1 May 2027 - 15 July 2027</option>
+                <option value="1 August 2027 - 15 October 2027">1 August 2027 - 15 October 2027</option>
+                <option value="1 November 2027 - 15 January 2028">1 November 2027 - 15 January 2028</option>
+            </select>
+
+            <!-- Preferred Timeframe -->
+            <label for="timeframe">Preferred Time:</label>
+            <select id="timeframe" class="enroll-input" required>
+                <option value="10am">10am (Morning)</option>
+                <option value="2pm">2pm (Afternoon)</option>
+                <option value="6pm">6pm (Evening)</option>
+            </select>
+
+            <!-- Submit and Cancel buttons -->
+            <button type="submit" class="enroll-submit">Submit</button>
+            <button type="button" id="cancel-button" class="cancel-button">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+</body>
+</html>

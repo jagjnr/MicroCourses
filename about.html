@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MicroCourses</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div data-include="header.html"></div>
+
+    <!-- About Us Content -->
+    <main class="about-container">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>MicroCourses</strong>, where we empower individuals with the skills needed to thrive in a tech-driven world.</p>
+
+        <p>At MicroCourses, we believe in the power of learning through practical, hands-on experience. Our courses are designed to bridge the gap between theoretical knowledge and real-world application, enabling learners to become proficient in high-demand fields.</p>
+
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide affordable, high-quality education that equips learners with the technical and analytical skills necessary to excel in today’s rapidly evolving job market.</p>
+
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li><strong>Hands-on Learning:</strong> Practical skills you can immediately apply in professional settings.</li>
+            <li><strong>Expert Instructors:</strong> Learn from industry professionals.</li>
+            <li><strong>Flexible Learning:</strong> Courses designed to fit your schedule.</li>
+            <li><strong>Cutting-Edge Curriculum:</strong> Stay ahead with the latest technologies.</li>
+        </ul>
+
+        <!-- Animated Section -->
+        <div class="animated-section">
+            <h3>Join Us Today!</h3>
+            <p>Be part of a learning community that values innovation, knowledge, and skill development.</p>
+            <img src="assets/people.jpg" alt="MicroCourses Banner" class="about-banner">
+        </div>
+
+        <h3>Our Full Stack Data Scientist Course</h3>
+        <p>Our flagship offering is the <strong>Full Stack Data Scientist Course</strong>. This comprehensive program covers the entire data science pipeline from data engineering and analysis to model deployment. Learners have the flexibility to choose single courses that suit their needs or enroll in the complete Full Stack Data Scientist program to gain a comprehensive skill set.</p>
+        <p>By the end of the course, you will:</p>
+        <ul>
+            <li>Develop a strong foundation in data science and machine learning.</li>
+            <li>Learn how to build, deploy, and monitor machine learning models.</li>
+            <li>Gain hands-on experience with ML frameworks and cloud platforms.</li>
+            <li>Master best practices for data engineering and model deployment.</li>
+        </ul>
+        <p>Join us and shape the future of technology together!</p>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+
+    <!-- Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedSection = document.querySelector(".animated-section");
+            animatedSection.style.opacity = 0;
+            animatedSection.style.transition = "opacity 2s ease";
+            setTimeout(() => {
+                animatedSection.style.opacity = 1;
+            }, 500);
+        });
+    </script>
+</body>
+</html>
+
+

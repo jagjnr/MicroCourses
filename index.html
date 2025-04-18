@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroCourses - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div data-include="header.html"></div>
+
+    <!-- Main Content -->
+    <main class="home-container">
+        <section class="intro">
+            <h2>Welcome to MicroCourses</h2>
+            <p>Empowering you with practical skills for a tech-driven future!</p>
+            <div class="promo-video">
+                <video controls width="100%">
+                    <source src="assets/ai.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>Discover our flagship Full Stack Data Scientist Course and many more tailored to help you thrive in the world of technology.</p>
+            <a href="courses.html" class="explore-btn">Explore Courses</a>
+        </section>
+
+        <section class="highlights">
+            <h3>Why Choose MicroCourses?</h3>
+            <ul>
+                <li>Hands-on Learning with Real-World Projects</li>
+                <li>Expert Instructors from Leading Industries</li>
+                <li>Flexible Learning Paths to Suit Your Schedule</li>
+                <li>Supportive Community and Networking Opportunities</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+
+    <!-- Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const promoVideo = document.querySelector(".promo-video");
+            promoVideo.style.opacity = 0;
+            promoVideo.style.transition = "opacity 1.5s ease";
+            setTimeout(() => {
+                promoVideo.style.opacity = 1;
+            }, 300);
+        });
+    </script>
+</body>
+</html>

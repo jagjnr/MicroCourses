@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - MicroCourses</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+    <!-- Header -->
+    <div data-include="header.html"></div>
+
+    <!-- Contact Us Content -->
+    <main class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Map Location -->
+        <h3>Our Location</h3>
+        <p>L55,	180 George St, Sydney NSW 2000</p>
+        <p>Located on the top floor of the Salesforce Tower overlooking beautiful Sydney Harbour!</p>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+
+    <!-- Load Google Maps API -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjvZc5Eg4qJ4pIHDOlP38okXC2E_LePNs&callback=initMap">
+    </script>
+    </body>
+</html>
